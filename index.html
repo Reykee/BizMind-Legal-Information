@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms of Use – BizMind</title>
+    <style>
+        :root {
+            --primary:      #00C2FF;
+            --primary-light:#33D6FF;
+            --primary-dark: #0099CC;
+            --black:        #0F0F0F;
+            --surface:      #1A1A1A;
+            --surface-2:    #242424;
+            --border:       #2E2E2E;
+            --text:         #ECEDEE;
+            --text-muted:   #9BA1A6;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--black);
+            margin: 0;
+            padding: 24px 16px 48px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .logo-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #00C2FF 0%, #0099CC 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 900;
+            color: #0F0F0F;
+            letter-spacing: -1px;
+            box-shadow: 0 4px 20px rgba(0,194,255,0.35);
+        }
+
+        .logo-name {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #00C2FF, #33D6FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 40px 44px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 36px;
+            gap: 12px;
+        }
+
+        .tab-btn {
+            padding: 10px 28px;
+            border: 1.5px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 24px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--primary-dark);
+            color: var(--primary-light);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #00C2FF, #0099CC);
+            border-color: transparent;
+            color: #0F0F0F;
+        }
+
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-top: 0;
+            padding-bottom: 12px;
+            border-bottom: 1.5px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--primary-light);
+            margin-top: 28px;
+        }
+
+        p { margin: 0 0 12px; }
+        ul { padding-left: 20px; }
+
+        strong { color: var(--primary-light); }
+
+        a { color: var(--primary); text-decoration: none; }
+
+        .highlight-box {
+            background: var(--surface-2);
+            border-left: 3px solid var(--primary);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 16px 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 44px;
+            border-top: 1px solid var(--border);
+            padding-top: 22px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px 20px; }
+            .logo-name { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo-wrap">
+        <div class="logo-icon">BM</div>
+        <span class="logo-name">BizMind</span>
+    </div>
+    <p class="tagline">The Business Operating System</p>
+</div>
+
+<div class="container">
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('privacy')">Privacy Policy</button>
+        <button class="tab-btn" onclick="showTab('terms')">Terms of Use</button>
+    </div>
+
+    <div id="privacy" class="content-section active">
+        <h2>Privacy Policy</h2>
+        <p><strong>Effective Date:</strong> February 26, 2026</p>
+
+        <h3>1. Introduction</h3>
+        <p>
+            BizMind is a Business Operating System designed to help business owners manage stock,
+            track daily revenue, automate closing reports, and enable global service bookings.
+            This Privacy Policy explains how we collect, use, and protect your data.
+        </p>
+
+        <h3>2. Information We Collect</h3>
+        <ul>
+            <li>Account information (name, phone number, email)</li>
+            <li>Business registration details</li>
+            <li>Product and stock data</li>
+            <li>Sales and revenue logs</li>
+            <li>Booking and customer interaction records</li>
+            <li>Device and usage analytics</li>
+        </ul>
+
+        <h3>3. How We Use Your Data</h3>
+        <ul>
+            <li>To manage inventory and automate stock tracking</li>
+            <li>To calculate daily revenue and sales summaries</li>
+            <li>To enable booking and service reservations</li>
+            <li>To send business alerts and reminders</li>
+            <li>To improve system performance and reliability</li>
+        </ul>
+
+        <div class="highlight-box">
+            BizMind does NOT sell your personal or business data to third parties.
+        </div>
+
+        <h3>4. Data Security</h3>
+        <p>
+            We use encryption and secure cloud infrastructure to protect business and user data.
+            All sensitive data is stored using industry-standard security practices.
+        </p>
+
+        <h3>5. Contact</h3>
+        <p>📧 support@bizmindapp.com</p>
+        <p>📍 Dar es Salaam, Tanzania</p>
+    </div>
+
+    <div id="terms" class="content-section">
+        <h2>Terms of Use</h2>
+
+        <h3>1. Agreement</h3>
+        <p>
+            By using BizMind, you agree to these Terms. BizMind provides tools for
+            business automation, stock intelligence, revenue tracking, and booking management.
+        </p>
+
+        <h3>2. User Responsibilities</h3>
+        <ul>
+            <li>Provide accurate business information</li>
+            <li>Maintain security of your login credentials</li>
+            <li>Use the platform lawfully</li>
+        </ul>
+
+        <h3>3. Business Data</h3>
+        <p>
+            BizMind processes sales, stock, and booking data based on user input.
+            Users are responsible for accuracy of entered data.
+        </p>
+
+        <div class="highlight-box">
+            BizMind is a business management platform and does not guarantee business profits or revenue growth.
+        </div>
+
+        <h3>4. Limitation of Liability</h3>
+        <p>
+            BizMind shall not be liable for business losses resulting from inaccurate data entry,
+            service interruptions, or third-party disruptions.
+        </p>
+
+        <h3>5. Governing Law</h3>
+        <p>
+            These Terms are governed by the laws of the United Republic of Tanzania.
+        </p>
+
+        <h3>6. Contact</h3>
+        <p>📧 support@bizmindapp.com</p>
+    </div>
+
+    <div class="last-updated">
+        &copy; 2026 <span>BizMind</span>. All rights reserved. | The Business Operating System
+    </div>
+</div>
+
+<script>
+function showTab(tabName) {
+    document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(tabName).classList.add('active');
+    const btn = Array.from(document.querySelectorAll('.tab-btn'))
+        .find(b => b.getAttribute('onclick').includes(tabName));
+    if (btn) btn.classList.add('active');
+}
+</script>
+
+</body>
+</html>
